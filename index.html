@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="squares">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .container {
+            width: 100%;
+            height: 100vh;
+            background: #1e1f2e;
+        }
+        
+        .squares {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            overflow: hidden;
+        }
+        
+        .squares li {
+            top: -120px;
+            position: absolute;
+            display: block;
+            list-style: none;
+            background: #434452;
+            border-radius: 15%;
+            animation: squaresAnimation 15s linear infinite;
+        }
+        
+        @keyframes squaresAnimation {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            100% {
+                transform: translateY(900px) rotate(360deg);
+            }
+        }
+        
+        .squares li:nth-child(1) {
+            width: 60px;
+            height: 60px;
+            left: 5%;
+            animation-delay: 0s;
+        }
+        
+        .squares li:nth-child(2) {
+            width: 40px;
+            height: 40px;
+            left: 30%;
+            animation-delay: 1.5s;
+        }
+        
+        .squares li:nth-child(3) {
+            width: 70px;
+            height: 70px;
+            left: 45%;
+            animation-delay: 2.5s;
+        }
+        
+        .squares li:nth-child(4) {
+            width: 30px;
+            height: 30px;
+            left: 65%;
+            animation-delay: 3s;
+        }
+        
+        .squares li:nth-child(5) {
+            width: 90px;
+            height: 90px;
+            left: 85%;
+            animation-delay: 0.3s;
+        }
+        
+        .squares li:nth-child(6) {
+            width: 40px;
+            height: 40px;
+            left: 15%;
+            animation-delay: 3s;
+        }
+        
+        .squares li:nth-child(7) {
+            width: 80px;
+            height: 80px;
+            left: 5%;
+            animation-delay: 7s;
+        }
+        
+        .squares li:nth-child(8) {
+            width: 100px;
+            height: 100px;
+            left: 35%;
+            animation-delay: 6s;
+        }
+        
+        .squares li:nth-child(9) {
+            width: 55px;
+            height: 55px;
+            left: 80%;
+            animation-delay: 6.5s;
+        }
+        
+        .squares li:nth-child(10) {
+            width: 115px;
+            height: 115px;
+            left: 20%;
+            animation-delay: 8.5s;
+        }
+        
+        .squares li:nth-child(11) {
+            width: 85px;
+            height: 85px;
+            left: 55%;
+            animation-delay: 9.5s;
+        }
+        
+        .squares li:nth-child(12) {
+            width: 65px;
+            height: 65px;
+            left: 75%;
+            animation-delay: 11.5s;
+        }
+        
+        .squares li:nth-child(13) {
+            width: 45px;
+            height: 45px;
+            left: 18%;
+            animation-delay: 12.5s;
+        }
+        
+        .squares li:nth-child(14) {
+            width: 95px;
+            height: 95px;
+            left: 45%;
+            animation-delay: 12s;
+        }
+        
+        .squares li:nth-child(15) {
+            width: 30px;
+            height: 30px;
+            left: 58%;
+            animation-delay: 13s;
+        }
+    </style>
+</body>
+
+</html>
